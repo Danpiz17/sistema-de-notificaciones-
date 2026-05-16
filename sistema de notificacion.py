@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-# Clase abstracta
 class Notificacion(ABC):
 
     @abstractmethod
@@ -8,7 +7,6 @@ class Notificacion(ABC):
         pass
 
 
-# Clase Email
 class EmailNotificacion(Notificacion):
 
     def __init__(self, destinatario, asunto, cuerpo):
@@ -25,7 +23,6 @@ Mensaje: {self.cuerpo}
 """
 
 
-# Clase SMS
 class SMSNotificacion(Notificacion):
 
     LIMITE = 160
